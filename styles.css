@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #434945;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#presupuesto-titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#presupuesto-total {
+    font-size: 2.5em;
+    color: #434945;
+    margin-bottom: 20px;
+}
+
+#ingresos p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    
+}
+
+#total-ingresos {
+    color: #28a745;
+}
+
+#total-egresos {
+    color: #dc3545;
+}
+
+#porcentaje-gastos {
+    font-weight: bold;
+}
+
+/* Estilos para la sección de transacciones */
+.transaction-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-form {
+    width: 45%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.transaction-form select,
+.transaction-form input,
+.transaction-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.transaction-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la lista de transacciones */
+.transaction-list {
+    width: 45%;    
+}
+
+.transaction-list h2 {
+    margin-bottom: 20px;
+}
+
+.transaction-list div {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.transaction-list div p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
