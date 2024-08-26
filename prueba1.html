@@ -21,14 +21,14 @@
     <div class="container">
         <div class="header">
             <h1 id="presupuesto-titulo">Presupuesto de </h1>
-            <div id="presupuesto-total">+ 500.00</div>
+            <div id="presupuesto-total">+ 0.00</div>
             <div id="ingresos">
-                <p>INGRESOS: <span id="total-ingresos">+800.00</span></p>
-                <p>EGRESOS: <span id="total-egresos">-300.00</span></p>
-                <p>Porcentaje de gastos: <span id="porcentaje-gastos">12%</span></p>
+                <p>INGRESOS: <span id="total-ingresos">+0.00</span></p>
+                <p>EGRESOS: <span id="total-egresos">-0.00</span></p>
+                <p>Porcentaje de gastos: <span id="porcentaje-gastos">0%</span></p>
             </div>
         </div>
-        <div class="transaction-section">
+      <div class="transaction-section">
             <div class="transaction-form">
                 <label for="tipo">Transacción</label>
                 <select id="tipo">
@@ -39,18 +39,42 @@
                 <input type="number" id="monto" placeholder="Monto">
                 <button id="agregar">Agregar</button>
             </div>
-            <div class="transaction-list">
-                <div id="ingresos-list">
-                    <h2>Ingresos</h2>
-                    <!-- Aquí se agregarán los ingresos -->
+            <div>
+                <h2>Presupuesto</h2>
+
+                <div class="section">
+                    <button class="toggle-btn" onclick="toggleSection('lista-ingresos')">Ingresos</button>
+                    <div id="lista-ingresos" class="toggle-content">
+                        <!-- Aquí se mostrarán los ingresos -->
+
+                    </div>
                 </div>
-                <div id="egresos-list">
-                    <h2>Egresos</h2>
-                    <!-- Aquí se agregarán los egresos -->
+        
+                <h3>Egresos</h3>
+                <div class="section">
+                    <button class="toggle-btn" onclick="toggleSection('lista-egresos')">Egresos</button>
+                    <div id="lista-egresos" class="toggle-content">
+                        <!-- Aquí se mostrarán los egresos -->
+                      
+                    </div>
                 </div>
             </div>
+  <!--          <div class="transaction-list">
+                <div id="ingresos-list">
+                    <h2>Ingresos</h2>  -->
+                    <!-- Aquí se agregarán los ingresos -->
+  <!--               </div>
+                <div id="egresos-list">
+                    <h2>Egresos</h2>  -->
+                    <!-- Aquí se agregarán los egresos -->
+  <!--            </div>
+            </div> -->
+            
+ 
+
+   
         </div>
-    </div>
+    </div> 
 </body>
 </html>
 
